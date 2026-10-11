@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>A little surprise for Bhauja 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petal-layer" aria-hidden="true"></div>
+
+  <main>
+    <!-- First screen: click the gift to reveal the birthday site -->
+    <section class="gift-opening" id="giftOpening">
+      <div class="gift-glow"></div>
+      <p class="eyebrow">A little surprise, made with love</p>
+      <h1>Hey, <span>Bhauja!</span></h1>
+      <p class="opening-copy">I prepared a little something just for you… 💖</p>
+      <button class="gift-button" id="openGift" aria-label="Open your birthday gift">
+        <span class="gift-bow">🎀</span>
+        <span class="gift-box">🎁</span>
+        <span class="gift-label">Tap to open your gift</span>
+      </button>
+      <p class="tiny-note">A special surprise is waiting inside ♡</p>
+    </section>
+
+    <div id="birthdayExperience" class="hidden">
+      <section class="hero" id="home">
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">✧</div>
+        <div class="hero-card">
+          <p class="eyebrow">Today is all about you</p>
+          <div class="hero-flower" aria-hidden="true">🌷</div>
+          <h1>Happy Birthday,<br><span>Bhauja!</span></h1>
+          <p class="hero-copy">Your smile makes moments brighter. Today, we celebrate the wonderful person you are.</p>
+          <button class="primary-btn" id="openSurprise">Unwrap your wishes <span>💌</span></button>
+          <p class="tiny-note">Made with lots of love ♡</p>
+        </div>
+        <div class="floating-decor decor-heart">♡</div>
+        <div class="floating-decor decor-butterfly">🦋</div>
+        <div class="floating-decor decor-gift">🌸</div>
+      </section>
+
+      <section class="section celebration hidden" id="celebration">
+        <p class="eyebrow">A SPECIAL DAY FOR A SPECIAL SOUL</p>
+        <h2>A day as lovely as <span>you</span> ✨</h2>
+        <p class="section-intro">Wishing you a day full of laughter, sweet surprises, warm hugs, and all the little things that make you happy.</p>
+        <div class="cake-wrap">
+          <div class="cake-emoji" aria-label="Birthday cake">🎂</div>
+          <div class="candle-row" aria-hidden="true"><span>🕯️</span><span>🕯️</span><span>🕯️</span></div>
+          <button class="secondary-btn" id="blowCandles">Make a wish & blow the candles ✨</button>
+          <p class="wish-message" id="wishMessage" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="section gallery-section hidden" id="memories">
+        <p class="eyebrow">Our Favourite Moments with Our Favourite Person💝...</p>
+        <h2>Beautiful memories <span>📸</span></h2>
+        <p class="section-intro">Every picture holds a little piece of happiness❤️...</p>
+        <div class="gallery">
+          <figure class="photo-card">
+            <img src="Photo1.jpeg" alt="A favourite photo of Bhauja" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>🌸</span><strong>Bhauja's lovely smile</strong><small>Add photo: bhauja-1.jpg</small></div>
+            <figcaption>Your beautiful smile</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="Photo2.jpeg" alt="A photo together" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>💗</span><strong>A memory together</strong><small>Add photo: together-1.jpg</small></div>
+            <figcaption>A sister-in-law by relation, a wonderful friend by heart.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="Photo3.jpeg" alt="A favourite family photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>🦋</span><strong>Our happy moments</strong><small>Add photo: family-1.jpg</small></div>
+            <figcaption>Moments full of love</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section letter-section hidden" id="letter">
+        <div class="letter-card">
+          <div class="letter-icon">💌</div>
+          <p class="eyebrow">A note just for you</p>
+          <h2>Dear <span>Bhauja</span>,</h2>
+          <p class="letter-text">Happy Birthday to a truly special person! ❤️ May your life always be filled with love, peace, good health, laughter, and beautiful new beginnings. May every dream close to your heart find its way to you, and may you always have a reason to smile.</p>
+          <p class="letter-text">Thank you for being such a lovely part of our family. Today and always, you deserve all the happiness in the world. Keep smiling, keep shining, and never forget how special you are.</p>
+          <p class="signature">With love, always <span>♡</span></p>
+        </div>
+      </section>
+
+      <section class="final-surprise hidden" id="finalSurprise">
+        <div class="final-emoji">🎉 💖 🎉</div>
+        <h2>Keep shining, Bhauja!</h2>
+        <p>May your year be as wonderful and beautiful as your heart.</p>
+        <button class="primary-btn" id="celebrateAgain">Celebrate again! 🎊</button>
+      </section>
+    </div>
+  </main>
+
+  <footer>Made especially for you, Bhauja <span>♡</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
